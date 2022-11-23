@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,41 +21,8 @@
                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WhatsApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-cl-KPN">
-                                <rect key="frame" x="148" y="220" width="118" height="26"/>
-                                <fontDescription key="fontDescription" name="STIXTwoMath-Regular" family="STIX Two Math" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telegram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jc-Hc-Ws8">
-                                <rect key="frame" x="155.5" y="376" width="103" height="26"/>
-                                <fontDescription key="fontDescription" name="STIXTwoMath-Regular" family="STIX Two Math" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gp-vC-Zye">
-                                <rect key="frame" x="122.5" y="422" width="169" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="169" id="Mam-du-dc2"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="WhatsApp"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Telegram">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.28010153770000001" green="0.72529649730000001" blue="0.96593159439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="telegramTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chU-GB-2tV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBE-Xw-Q9c">
-                                <rect key="frame" x="122.5" y="266" width="169" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="169" id="u5j-0R-aE2"/>
-                                </constraints>
+                                <rect key="frame" x="50" y="240" width="314" height="44"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="WhatsApp"/>
@@ -62,14 +30,29 @@
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.38095915320000001" green="0.81269603970000004" blue="0.20772680639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="whatsappTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpU-8z-ZYY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gp-vC-Zye">
+                                <rect key="frame" x="50" y="304" width="314" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="WhatsApp"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Telegram">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.28010153770000001" green="0.72529649730000001" blue="0.96593159439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="telegramTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chU-GB-2tV"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5e-Cq-mdx">
-                                <rect key="frame" x="158.5" y="752" width="97" height="50"/>
+                                <rect key="frame" x="50" y="408" width="314" height="44"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="WhatsApp"/>
@@ -77,7 +60,7 @@
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.92848962550000003" green="0.22850966449999999" blue="0.31836116310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZI-no-bHg"/>
@@ -85,33 +68,38 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.96649593109999998" green="0.7056263089" blue="0.26295688750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
                             <constraint firstItem="lcs-rR-L6e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="2KH-ud-s2p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lcs-rR-L6e" secondAttribute="trailing" constant="50" id="2XT-kd-qzq"/>
-                            <constraint firstItem="8Gp-vC-Zye" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="73M-TF-90B"/>
                             <constraint firstItem="lcs-rR-L6e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="7Q3-9Q-iK1"/>
                             <constraint firstItem="lcs-rR-L6e" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Ht-Yn-PNa"/>
-                            <constraint firstItem="P5e-Cq-mdx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qig-rg-diA"/>
-                            <constraint firstItem="8Gp-vC-Zye" firstAttribute="top" secondItem="6Jc-Hc-Ws8" secondAttribute="bottom" constant="20" id="Tfv-2v-EBs"/>
-                            <constraint firstItem="6Jc-Hc-Ws8" firstAttribute="top" secondItem="iBE-Xw-Q9c" secondAttribute="bottom" constant="60" id="VI3-Kh-Xwc"/>
-                            <constraint firstItem="aUK-cl-KPN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X0q-Uo-V9G"/>
-                            <constraint firstItem="6Jc-Hc-Ws8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YwE-BF-MJD"/>
-                            <constraint firstItem="iBE-Xw-Q9c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZCg-xI-yZR"/>
-                            <constraint firstItem="aUK-cl-KPN" firstAttribute="top" secondItem="lcs-rR-L6e" secondAttribute="bottom" constant="60" id="fdM-vZ-JR6"/>
-                            <constraint firstItem="iBE-Xw-Q9c" firstAttribute="top" secondItem="aUK-cl-KPN" secondAttribute="bottom" constant="20" id="iEn-wR-UfP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P5e-Cq-mdx" secondAttribute="bottom" constant="60" id="swA-vN-h0V"/>
+                            <constraint firstItem="iBE-Xw-Q9c" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="BDP-SI-7vm"/>
+                            <constraint firstItem="iBE-Xw-Q9c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BsT-pQ-E7s"/>
+                            <constraint firstItem="iBE-Xw-Q9c" firstAttribute="top" secondItem="lcs-rR-L6e" secondAttribute="bottom" constant="80" id="CSN-xY-Hew"/>
+                            <constraint firstItem="P5e-Cq-mdx" firstAttribute="top" secondItem="8Gp-vC-Zye" secondAttribute="bottom" constant="60" id="HW8-um-kMS"/>
+                            <constraint firstItem="P5e-Cq-mdx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IIE-IH-P9C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="P5e-Cq-mdx" secondAttribute="trailing" constant="50" id="Ois-2q-5BG"/>
+                            <constraint firstItem="8Gp-vC-Zye" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xoz-Zf-lrW"/>
+                            <constraint firstItem="8Gp-vC-Zye" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cWk-Dr-x7D"/>
+                            <constraint firstItem="8Gp-vC-Zye" firstAttribute="top" secondItem="iBE-Xw-Q9c" secondAttribute="bottom" constant="20" id="hcU-eA-XvV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8Gp-vC-Zye" secondAttribute="trailing" constant="50" id="id1-IU-d0Z"/>
+                            <constraint firstItem="P5e-Cq-mdx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="itH-S0-n6X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="iBE-Xw-Q9c" secondAttribute="trailing" constant="50" id="wvx-aH-Taf"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="TelegaLabel" destination="6Jc-Hc-Ws8" id="i2E-Wn-Tnc"/>
-                        <outlet property="WhatsAppLabel" destination="aUK-cl-KPN" id="JNr-0t-Cfc"/>
                         <outlet property="inputNumberTF" destination="lcs-rR-L6e" id="7ec-TO-CIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.846153846153847" y="-34.123222748815166"/>
+            <point key="canvasLocation" x="52.173913043478265" y="-35.491071428571423"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

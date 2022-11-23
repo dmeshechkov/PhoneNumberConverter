@@ -10,8 +10,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet private weak var inputNumberTF: UITextField!
-    @IBOutlet weak var WhatsAppLabel: UILabel!
-    @IBOutlet weak var TelegaLabel: UILabel!
     
     private let maxNumberCount = 11
     private let regex = try! NSRegularExpression(pattern: "[\\+\\s-\\(\\)]", options: .caseInsensitive)
@@ -48,16 +46,7 @@ class ViewController: UIViewController {
         let maxIndex = number.index(number.startIndex, offsetBy: number.count)
         let regRange = number.startIndex..<maxIndex
         
-        
-//        if number.count < 7 {
-//            let pattern = "(\\d)(\\d{3})(\\d+)"
-//                number = number.replacingOccurrences(of: pattern, with: "$1$2$3", options: .regularExpression, range: regRange)
-//            } else {
-//                let pattern = "(\\d)(\\d{3})(\\d{3})(\\d{2})(\\d+)"
-//                    number = number.replacingOccurrences(of: pattern, with: "$1$2$3$4$5", options: .regularExpression, range: regRange)
-//                }
-        
-        return number
+               return number
         
     }
     
@@ -65,7 +54,6 @@ class ViewController: UIViewController {
     
     @IBAction func whatsappTapped(_ sender: UIButton) {
         numberTF = inputNumberTF.text ?? ""
-//        WhatsAppLabel.text = "Wa.me/\(numberTF)"
         UIApplication.shared.open(URL(string: "https://Wa.me/\(numberTF)")! as URL, options: [:], completionHandler: nil)
         
     }
