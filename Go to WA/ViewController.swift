@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         let range = NSString(string: phoneNumber).range(of: phoneNumber)
         var number = regex.stringByReplacingMatches(in: phoneNumber, options: [], range: range, withTemplate: "")
         
+        
         if number.count > maxNumberCount {
             let maxIndex = number.index(number.startIndex, offsetBy: maxNumberCount)
                 number = String(number[number.startIndex..<maxIndex])
@@ -47,6 +48,7 @@ class ViewController: UIViewController {
         let maxIndex = number.index(number.startIndex, offsetBy: number.count)
         let regRange = number.startIndex..<maxIndex
         
+        
 //        if number.count < 7 {
 //            let pattern = "(\\d)(\\d{3})(\\d+)"
 //                number = number.replacingOccurrences(of: pattern, with: "$1$2$3", options: .regularExpression, range: regRange)
@@ -56,11 +58,16 @@ class ViewController: UIViewController {
 //                }
         
         return number
+        
     }
     
-    
+    var numberTF: String = ""
     
     @IBAction func whatsappTapped(_ sender: UIButton) {
+        numberTF = inputNumberTF.text ?? ""
+//        WhatsAppLabel.text = "Wa.me/\(numberTF)"
+        UIApplication.shared.open(URL(string: "https://Wa.me/\(numberTF)")! as URL, options: [:], completionHandler: nil)
+        
     }
     @IBAction func telegramTapped(_ sender: UIButton) {
     }
@@ -70,6 +77,8 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    
 }
 
 extension ViewController: UITextFieldDelegate {
